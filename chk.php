@@ -109,8 +109,8 @@ $result2 = curl_exec($ch);
 #echo($result2);
 $pid = trim(strip_tags(getStr($result2,'"result":true,"client_secret":"','_secret_')));
 $psid = trim(strip_tags(getStr($result2,'"result":true,"client_secret":"','"')));
-#echo "PI ID: $pid<br><hr>";
-#echo "PI SECRET ID: $psid<br><hr>";
+echo "PI ID: $pid<br><hr>";
+echo "PI SECRET ID: $psid<br><hr>";
 #==================[3 REQ]
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_intents/'.$pid.'/confirm');
