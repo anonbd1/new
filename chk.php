@@ -145,23 +145,23 @@ $msg = trim(strip_tags(getStr($result3,'"message": "','"')));
 #echo "MESSAGE: $msg<br><hr>";
 #===============[Card Response]
 if((strpos($result3,  '"status": "succeeded"'))) {
-  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Aprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Charged 1$ [@MadMax0r]</span></i></font>";
+  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Aprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Charged 1$ [@ANONBD]</span></i></font>";
 }
 elseif
 (strpos($result3,  "funds")) {
-  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Aprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Insufficient Funds</span></i></font> <br><font class='badge badge-dark'>Message : $msg [@MadMax0r]";
+  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Aprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Insufficient Funds</span></i></font> <br><font class='badge badge-dark'>Message : $msg [@ANONBD]";
 }
 elseif
 (strpos($result3,  "security")) {
-  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Ccn Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Ccn Live</span></i></font> <br><font class='badge badge-dark'>Message : $msg [@MadMax0r]";
+  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Ccn Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Ccn Live</span></i></font> <br><font class='badge badge-dark'>Message : $msg [@ANONBD]";
 }
 elseif
 (strpos($result3,"requires_action")) {
-  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Reprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Message : 3d Secure Card. [@MadMax0r]";
+  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Reprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Message : 3d Secure Card. [@ANONBD]";
 }
 else
 {
-  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Reprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Message : $msg [@MadMax0r]";
+  echo "<font size=2 color='black'>  <font class='badge badge-info'>#Reprovadas Card : $cc|$mes|$ano|$cvv </span></i></font> <br> <font size=2 color='red'><font class='badge badge-light'>Message : $msg [@ANONBD]";
 }
 
 curl_close($ch);
