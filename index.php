@@ -1,195 +1,269 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<!--don't edit my index-->
-<head>
-    <meta charset="utf-8">
+<html class="loading">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="assets/css/pace.css">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>[⍋] CCN AND CVV CHECKER</title>
-    <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600%7CRoboto:400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    
-    <!-- Head Libs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script data-pace-options='{ "ajax": false, "selectors": [ "img" ]}' src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-    <script>
-var myVar=setInterval(function(){myTimer()},1000);
-function myTimer() {
-    var d = new Date();
-    document.getElementById("horas").innerHTML = d.toLocaleTimeString();
-}
-</script>
-<script type="text/javascript">
-function Mudaestado(el) {
-        var display = document.getElementById(el).style.display;
-        if(display == "none")
-            document.getElementById(el).style.display = 'block';
-        else
-            document.getElementById(el).style.display = 'none';
-    }
-</script>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">    
+    <title>HackerBD</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/app-lite.css">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="theme-assets/css/core/colors/palette-gradient.css">
+    	 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  </head>
+  <body class="vertical-layout" data-color="bg-gradient-x-purple-blue">   
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-wrapper-before mb-3">        	
+        </div>        
+  <div class="content-body">
+  	<div class="mt-2"></div>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-body text-center">
+					<h4 class="mb-2"><strong>HackerBD CHECKER</strong></h4>
+					<textarea rows="6" class="form-control text-center form-checker mb-2" placeholder="PUT YOUR CC HERE :>"></textarea>												
+					<button class="btn btn-play btn-glow btn-bg-gradient-x-blue-cyan text-white" style="width: 49%; float: left;"><i class="fa fa-play"></i>START</button>
+					<button class="btn btn-stop btn-glow btn-bg-gradient-x-red-pink text-white" style="width: 49%; float: right;" disabled><i class="fa fa-stop"></i>STOP</button>
 
-<body class="content-dark">
-        <!-- /.site-sidebar -->
-        <main class="main-wrapper clearfix">
-            <!-- Page Title Area -->
-            <div class="row page-title clearfix">
-                <div class="page-title-left">
-                    <h6 class="page-title-heading mr-0 mr-r-5"><span >⟻ @ANONBD ⟼</span></h6>
 
-                    <p class="page-title-description mr-0 d-none d-md-inline-block"></p>
+
+				</div>
+			</div>
+		</div>
+<div class="col-md-4">
+  <div class="card mb-2">
+  	<div class="card-body">
+<h5>CHARGED :<span class="badge badge-success float-right charge">0</span></h5><hr>
+
+<h5>LIVE :<span class="badge badge-success float-right aprovadas">0</span></h5><hr>
+
+<h5>DIE :<span class="badge badge-danger float-right reprovadas">0</span></h5><hr>
+
+<h5>TOTAL :<span class="badge badge-primary float-right carregadas">0</span></h5><hr>
+
+<h5>LIMIT :<span class="badge badge-secondary float-right">5000</span></h5>
+
+                                    <label class="form-control-label" style="margin-left: 10px; margin-bottom: 20px" for="inputcvv"></label>
+                  </div> 
                 </div>
-                <!-- /.page-title-left -->
-                
-                <!-- /.page-title-right -->
-            </div>
-            <!-- /.page-title -->
-            <!-- =================================== -->
-            <!-- Different data widgets ============ -->
-            <!-- =================================== -->
-            <div class="widget-list row">
-                
-                <!-- /.widget-holder -->
-                <div class="widget-holder widget-full-height widget-flex col-lg-6">
-                    <div class="widget-bg">
-                        <div class="widget-heading">
-                            <h5 class="widget-title"><center><span class="badge badge-red">[⍋] Stripe Gateway [⍋]</span></center></h5>
-                            <div class="widget-graph-info">
-                                <div class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle text-muted fs-16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a>  <a class="dropdown-item" href="#">Another action</a>  <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.widget-graph-info -->
-                        </div>
-                        <!-- /.widget-heading -->  
-                        <div 
-                        class="widget-body">
-                            <button type="button" id="sh_cvv" onclick="Mudaestado('cvvapp');" class="btn btn-white">CVV [ <span id="cvv_conta">0</span> ]</button>
-
-                                                    <br>
-
-                                                    <p id="cvvapp"></p>
-
-                                             <br><br>    
-                            <button type="button" id="sh_apr" onclick="Mudaestado('aprovadasapp');" class="btn btn-info">CCN [ <span id="aprovada_conta">0</span>  ]</button>                            
-                                                            
-
-                            <br>
-
-                            <p id="aprovadasapp"></p>
-
-                            <br><br>
-
-                            <button type="button" id="sh_rep" onclick="Mudaestado('reprovadasapp');" class="btn btn-red">DECLINED [ <span id="reprovada_conta">0</span> ]</button>
-
-                            <br>
-
-                            <p id="reprovadasapp"></p>
-                        </div>
-                        <!-- /.widget-body -->
-                    </div>
-                    <!-- /.widget-bg -->
-                </div>
-                <!-- /.widget-holder -->
-                <div class="widget-holder widget-full-content widget-full-height col-lg-6">
-                    <div class="widget-bg">
-                        <div class="widget-heading">
-                            <div class="widget-graph-info">
-                                <div class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle text-muted fs-16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a>  <a class="dropdown-item" href="#">Another action</a>  <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.widget-graph-info -->
-                        </div>
-                        <!-- .widget-heading -->
-                        <div class="widget-body">
-                            <div class="container-fluid pd-20">
-                                <div class="row">
-                                    <div class="col">
-                                        
-
-                                    <textarea id="lista" placeholder="FORMAT: 0000000000000000|00|0000|000" class="form-control" style="resize:yes;outline:none;width:200; height:150px;"></textarea><br>
-
-                                    <button type="button" id="iniciar"  onclick="start()" class="btn btn-white" >Start</button> 
-                                    <button type="button" onclick="stop()" id="parar" class="btn btn-red">Stop</button>
-
-                                    
-
-                                    <br><br>
-                                    <p><span  class="badge badge-warning">RESULTS :-</p>
-                                   
-                                   </span>
-
-                                    <small>
-                                
-                                    <span style="font-size: 13px;">
-
-                                    STATUS : <span class="bagde badge-pill badge-light" id="demo">WAITING</span>
-                                     <br>   
-                                   
-                                    <span id="CVVLIVE" class="badge badge-white">0</span>&ensp;:&ensp;CVV<br>
-
-
-                                    <span id="CLIVE" class="badge badge-info">0</span>&ensp;:&ensp;CCN<br>
-
-
-                                    <span id="CDIE" class="badge badge-danger">0</span>&ensp;:&ensp;DECLINED<br>
-
-
-                                    <span id="testado" class="badge badge-warning">0</span>&ensp;:&ensp;TESTED &ensp;&ensp;&ensp;&nbsp;
-
-                                    <span id="carregada" class="badge badge-warning">0</span>&ensp;:&ensp;TOTAL</small>
-</span>
-
-
-                                    <br><br>
-
-
-                                 <!--    <p>Edited By :  <a target="_BLANK" href="https://www.youjizz.com/">𝕽𝖊𝖇𝖔𝖔𝖙 ♛</a></p>  -->
-
-
-                                            <!-- /.col-6 -->
-                                    </div>
-                                        <!-- /.row -->
-                                    </div>
-                                    <!-- /.col-lg-6 -->
-                                </div>
-                                <!-- /.row -->
-                            </div>
-                            <!-- /.container-fluid -->
-                        </div>
-                        <!-- /.widget-body -->
-                    </div>
-                    <!-- /.widget-bg -->
-                </div>
-                <!-- /.widget-holder -->
-            </div>
-            <!-- /.widget-list -->
-            </div>
-            <!-- /.card -->
+              </div>
+            		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<div class="float-right">
+						<button type="show" class="btn btn-primary btn-sm show-charge"><i class="fa fa-eye-slash"></i></button>
+					<button class="btn btn-success btn-sm btn-copy1"><i class="fa fa-copy"></i></button>					
+					</div>
+					<h4 class="card-title mb-1"><i class="fa fa-check-circle text-success"></i> CHARGED</h4>					
+			<div id='lista_charge'></div>
+				</div>				
+			</div>
+		</div>
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<div class="float-right">
+						<button type="show" class="btn btn-primary btn-sm show-lives"><i class="fa fa-eye-slash"></i></button>
+					<button class="btn btn-success btn-sm btn-copy"><i class="fa fa-copy"></i></button>					
+					</div>
+					<h4 class="card-title mb-1"><i class="fa fa-check text-success"></i> CVV/CCN</h4>					
+			<div id='lista_aprovadas'></div>
+				</div>				
+			</div>
+		</div>
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<div class="float-right">
+						<button type='hidden' class="btn btn-primary btn-sm show-dies"><i class="fa fa-eye"></i></button>
+					<button class="btn btn-danger btn-sm btn-trash"><i class="fa fa-trash"></i></button>					
+					</div>
+					<h4 class="card-title mb-1"><i class="fa fa-times text-danger"></i> DECLINED</h4>		
+						<div style='display: none;' id='lista_reprovadas'></div>
+				</div>				
+			</div>
+		</div>
+		
+</section>
         </div>
-        <!-- /.chat-panel -->
+      </div>
     </div>
-    <p><center><span class="badge badge-light">Modified By : @ANONBD</span></center></p>
-    <!-- /.content-wrapper -->
-    <!-- FOOTER -->
-    </div>
-    <!--/ #wrapper -->
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="jquery.js"></script>
-    <script src="jquery-ui.js"></script>
-    <script src="js.js"></script>
-</body>
+ 
+    <script src="theme-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
 
+<script>
+
+$(document).ready(function(){
+
+
+Swal.fire({ title: "@HACKERBD1", text: "Join Our Telegram Channel :(", icon: "warning", confirmButtonText: "OK", buttonsStyling: false, confirmButtonClass: 'btn btn-primary'});
+
+
+$('.show-charge').click(function(){
+var type = $('.show-charge').attr('type');
+$('#lista_charge').slideToggle();
+if(type == 'show'){
+$('.show-charge').html('<i class="fa fa-eye"></i>');
+$('.show-charge').attr('type', 'hidden');
+}else{
+$('.show-charge').html('<i class="fa fa-eye-slash"></i>');
+$('.show-charge').attr('type', 'show');
+}});
+
+$('.show-lives').click(function(){
+var type = $('.show-lives').attr('type');
+$('#lista_aprovadas').slideToggle();
+if(type == 'show'){
+$('.show-lives').html('<i class="fa fa-eye"></i>');
+$('.show-lives').attr('type', 'hidden');
+}else{
+$('.show-lives').html('<i class="fa fa-eye-slash"></i>');
+$('.show-lives').attr('type', 'show');
+}});
+
+$('.show-dies').click(function(){
+var type = $('.show-dies').attr('type');
+$('#lista_reprovadas').slideToggle();
+if(type == 'show'){
+$('.show-dies').html('<i class="fa fa-eye"></i>');
+$('.show-dies').attr('type', 'hidden');
+}else{
+$('.show-dies').html('<i class="fa fa-eye-slash"></i>');
+$('.show-dies').attr('type', 'show');
+}});
+
+$('.btn-trash').click(function(){
+	Swal.fire({title: 'REMOVE CC DIE SUCCESS', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+$('#lista_reprovadas').text('');
+});
+
+$('.btn-copy1').click(function(){
+	Swal.fire({title: 'COPY CC CHARGED SUCCESS', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+var lista_charge = document.getElementById('lista_charge').innerText;
+var textarea = document.createElement("textarea");
+textarea.value = lista_charge;
+document.body.appendChild(textarea); 
+textarea.select(); 
+document.execCommand('copy');           document.body.removeChild(textarea); 
+});
+
+
+$('.btn-copy').click(function(){
+	Swal.fire({title: 'COPY CC LIVE SUCCESS', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+var lista_lives = document.getElementById('lista_aprovadas').innerText;
+var textarea = document.createElement("textarea");
+textarea.value = lista_lives;
+document.body.appendChild(textarea); 
+textarea.select(); 
+document.execCommand('copy');           document.body.removeChild(textarea); 
+});
+
+
+$('.btn-play').click(function(){
+
+var lista = $('.form-checker').val().trim();
+var array = lista.split('\n');
+var charge = 0, lives = 0, dies = 0, testadas = 0, txt = '';
+
+if(!lista){
+	Swal.fire({title: 'Where your card?? please add a card!!', icon: 'error', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+	return false;
+}
+
+Swal.fire({title: 'Please wait for the card to be processed !!', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+
+var line = array.filter(function(value){
+if(value.trim() !== ""){
+	txt += value.trim() + '\n';
+	return value.trim();
+}
+});
+
+/*
+var line = array.filter(function(value){
+return(value.trim() !== "");
+});
+*/
+
+var total = line.length;
+
+
+/*
+line.forEach(function(value){
+txt += value + '\n';
+});
+*/
+
+$('.form-checker').val(txt.trim());
+// ảo ma hả, đừng lấy code chứ !!
+if(total > 5000000){
+  Swal.fire({title: ':) DARE TO CHECK MORE THAN 5000000 CC Ah, Pretty SMALL!!', icon: 'warning', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+  return false;
+}
+
+$('.carregadas').text(total);
+$('.btn-play').attr('disabled', true);
+$('.btn-stop').attr('disabled', false);
+
+line.forEach(function(data){
+var callBack = $.ajax({
+	url: 'chk.php?lista=' + data,
+	success: function(retorno){
+		if(retorno.indexOf("#CHARGED") >= 0){
+			Swal.fire({title: '+1 CHARGED CC', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+			$('#lista_charge').append(retorno);
+			removelinha();
+			charge = charge +1;
+			}
+			else if(retorno.indexOf("#LIVE") >= 0){
+			Swal.fire({title: '+1 LIVE CC', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+			$('#lista_aprovadas').append(retorno);
+			removelinha();
+			lives = lives +1;
+		    }else{
+			$('#lista_reprovadas').append(retorno);
+			removelinha();
+			dies = dies +1;
+		}
+		testadas = charge + lives + dies;
+	    $('.charge').text(charge);
+		$('.aprovadas').text(lives);
+		$('.reprovadas').text(dies);
+		$('.testadas').text(testadas);
+		
+		if(testadas == total){
+			Swal.fire({title: 'HAVE BEEN DISPOSED', icon: 'success', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+			$('.btn-play').attr('disabled', false);
+			$('.btn-stop').attr('disabled', true);
+		}
+        }
+      });
+      $('.btn-stop').click(function(){
+      Swal.fire({title: 'Succeeding Pause !!', icon: 'warning', showConfirmButton: false, toast: true, position: 'top-end', timer: 3000});
+      $('.btn-play').attr('disabled', false);
+      $('.btn-stop').attr('disabled', true);      
+      	callBack.abort();
+      	return false;
+      });
+    });
+  });
+});
+
+function removelinha() {
+var lines = $('.form-checker').val().split('\n');
+lines.splice(0, 1);
+$('.form-checker').val(lines.join("\n"));
+}
+
+
+  
+	
+</script>
+
+  </body>
 </html>
