@@ -101,7 +101,7 @@
 $(document).ready(function(){
 
 
-Swal.fire({ title: "@HACKERBD1", text: "Join Our Telegram Channel :(", icon: "warning", confirmButtonText: "OK", buttonsStyling: false, confirmButtonClass: 'btn btn-primary'});
+Swal.fire({ title: "@ANONBD", text: "Join Our Telegram Channel :(", icon: "warning", confirmButtonText: "OK", buttonsStyling: false, confirmButtonClass: 'btn btn-primary'});
 
 
 $('.show-charge').click(function(){
