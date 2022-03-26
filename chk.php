@@ -228,7 +228,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 'accept:application/json, text/javascript, */*; q=0.01',
 'accept-language: en-US,en;q=0.9',
 'content-type: application/x-www-form-urlencoded; charset=UTF-8',
-'cookie: nm-wishlist-ids=[]; mailchimp_landing_site=https://matwproject.org/product/income-generation/; woocommerce_items_in_cart=1; wp_woocommerce_session_8354b8795c576f1fc296da5c321b7c0b=f19a5a7a3827a38f819df6d778578fc2||1648498443||1648494843||54cce3491bbecfa0c2676d4a2f28929a; woocommerce_cart_hash=b790b586c4746dd2828f1af78fa55bf5; __stripe_mid=54b8cc8d-1481-4049-b688-d533d4fe8f19f7b43c; __stripe_sid=4333684e-cd8c-4836-8eb9-a6e1c02273d3b134c9',
+//'cookie: nm-wishlist-ids=[]; mailchimp_landing_site=https://matwproject.org/product/income-generation/; woocommerce_items_in_cart=1; wp_woocommerce_session_8354b8795c576f1fc296da5c321b7c0b=f19a5a7a3827a38f819df6d778578fc2||1648498443||1648494843||54cce3491bbecfa0c2676d4a2f28929a; woocommerce_cart_hash=b790b586c4746dd2828f1af78fa55bf5; __stripe_mid=54b8cc8d-1481-4049-b688-d533d4fe8f19f7b43c; __stripe_sid=4333684e-cd8c-4836-8eb9-a6e1c02273d3b134c9',
 'origin: https://matwproject.org',
 'referer: https://matwproject.org/checkout/',
 'sec-fetch-dest: empty',
