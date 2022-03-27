@@ -401,7 +401,7 @@ elseif
   } 
 
 elseif
-(strpos($result2,  'card was declined.')) {
+(strpos($result2,  'The transaction was declined. Please contact support quoting error RBLKLU.')) {
     echo '</br><span class="badge badge-danger">☠️ Reprovada ☠️ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Card Was Declined</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> 👑 @anonbd 👑 </span></br>';
   } 
 
