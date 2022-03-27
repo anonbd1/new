@@ -144,7 +144,7 @@ if($state=="Alabama"){ $state="AL";
 ///////////////////////////===[Webshare proxys for cc checker]===////////////////////////////////////
 $Websharegay = rand(0,250);
 $rp1 = array(
-  1 => 'mnhdwjkj-rotate:0c1372xbc5ea',
+  1 => 'gnnzdlfj-rotate:6jvs8xv88hd4',
     ); 
     $rotate = $rp1[array_rand($rp1)];
 //////////////////////////==============[Proxy Section]===============//////////////////////////////
