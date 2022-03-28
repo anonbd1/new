@@ -166,7 +166,7 @@ else {
 
 curl_close($ch);
 ob_flush();
-echo $result3;
+echo $result2;
 
 #[ SITE & CODED BY - PERKENT ]
 #[ CONTACT DETAILS ON TELEGRAM 👇 ]
