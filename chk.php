@@ -77,7 +77,7 @@ $headers = array();
 $headers[] = 'Host: criticalcss.com';
 $headers[] = 'accept: application/json';
 $headers[] = 'content-type: application/json';
-$headers[] = 'Cookie: _ga=GA1.2.1682383760.1648486702; _gid=GA1.2.1897402115.1648486702; __stripe_mid=c8456f5f-5122-42a9-b245-6f3901c64c3057282b; mp_ac2a8773c7590e4ae6f8c6b29b6576b1_mixpanel=%7B%22distinct_id%22%3A%20%2217fd176f62ea-054f752afbb9a58-4c3e2d72-e1000-17fd176f62f301%22%2C%22%24device_id%22%3A%20%2217fd176f62ea-054f752afbb9a58-4c3e2d72-e1000-17fd176f62f301%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _gat=1';
+//$headers[] = 'Cookie: _ga=GA1.2.1682383760.1648486702; _gid=GA1.2.1897402115.1648486702; __stripe_mid=c8456f5f-5122-42a9-b245-6f3901c64c3057282b; mp_ac2a8773c7590e4ae6f8c6b29b6576b1_mixpanel=%7B%22distinct_id%22%3A%20%2217fd176f62ea-054f752afbb9a58-4c3e2d72-e1000-17fd176f62f301%22%2C%22%24device_id%22%3A%20%2217fd176f62ea-054f752afbb9a58-4c3e2d72-e1000-17fd176f62f301%22%2C%22%24initial_referrer%22%3A%20%22%24direct%22%2C%22%24initial_referring_domain%22%3A%20%22%24direct%22%7D; _gat=1';
 $headers[] = 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0';
 $headers[] = 'origin: https://criticalcss.com';
 $headers[] = 'sec-fetch-site: same-site';
