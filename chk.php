@@ -87,6 +87,8 @@ $postcode = $matches1[1][0];
 $Websharegay = rand(0,250);
 $rp1 = array(
   1 => 'gnnzdlfj-rotate:6jvs8xv88hd4',
+  2 => 'qzyzeeme-rotate:mc7itiiol6ld',
+  3 => 'sxpcfiiu-rotate:uh5yw579hkfd',
     ); 
     $rotate = $rp1[array_rand($rp1)];
 //////////////////////////==============[Proxy Section]===============//////////////////////////////
@@ -265,12 +267,12 @@ elseif
 } 
 
 elseif
-(strpos($result2,  '"Thank You For Donation."')) {
+(strpos($result2,  '"Success:"')) {
     echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
 } 
 
 elseif
-(strpos($result2,  "Thank You.")) {
+(strpos($result2,  "success")) {
     echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
 } 
 
@@ -488,7 +490,7 @@ curl_close($ch);
 ob_flush();
 
 //echo "<b>1REQ Result:</b> $result1<br><br>";
-echo "<b>2REQ Result:</b> $result2<br><br>";
+//echo "<b>2REQ Result:</b> $result2<br><br>";
 
 #---------------------------------------------------------------------------------------------------------------------------------#
 #---------------------------------------------------[MADE BY ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹]----------------------------------------------------#
