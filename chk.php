@@ -31,7 +31,7 @@ $last = ucfirst(str_shuffle('appisbest'));
 $first1 = str_shuffle("kurumi");
 $serve_arr = array("gmail.com","hotmail.com","yahoo.com.br","bol.com.br","yopmail.com","outlook.com");
 $serv_rnd = $serve_arr[array_rand($serve_arr)];
-$email = "".$first1."%40".$serv_rnd."";
+$email = "".$first1."@".$serv_rnd."";
 
 $street = "".rand(0000,9999)."+Main+Street";
 $ph = array("682","346","246");
