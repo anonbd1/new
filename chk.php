@@ -100,7 +100,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($ch, CURLOPT_POSTFIELDS, '{"email":"'.$email.'","plan":"price_1HwBoaLYNoSq08J0Q92yIKGh","quantity":1,"customerId":"cus_LPAkff7eywLDrE","protect":"TP2WRyxFxcBYXCXcz@uTmKhs","paymentMethodId":"pm_1KiMYdLYNoSq08J0vghEygwo","sp":"QQhgHmQ2eDDG)PEoZAXNXeEy"}');
+curl_setopt($ch, CURLOPT_POSTFIELDS, '{"email":"'.$email.'","plan":"price_1HwBoaLYNoSq08J0Q92yIKGh","quantity":1,"customerId":"cus_LPAkff7eywLDrE","protect":"TP2WRyxFxcBYXCXcz@uTmKhs","paymentMethodId":"'.$id.'","sp":"QQhgHmQ2eDDG)PEoZAXNXeEy"}');
 $result2 = curl_exec($ch);
 $tk2 = trim(strip_tags(getStr($result2,'"id": "','"')));
 
