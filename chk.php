@@ -24,44 +24,23 @@ function GetStr($string, $start, $end)
   return $str[0];
 }
 #==============[Randomizing Details Api]
-$ch = curl_init();
-$name = ucfirst(str_shuffle('kurumi'));
-$last = ucfirst(str_shuffle('appisbest'));
-
-$first1 = str_shuffle("kurumi");
-$serve_arr = array("gmail.com","hotmail.com","yahoo.com.br","bol.com.br","yopmail.com","outlook.com");
-$serv_rnd = $serve_arr[array_rand($serve_arr)];
-$email = "".$first1."@".$serv_rnd."";
-
-$street = "".rand(0000,9999)."+Main+Street";
-$ph = array("682","346","246");
-$ph1 = array_rand($ph);
-$phh = $ph[$ph1];
-$phone = "$phh".rand(0000000,9999999)."";
-
-$st = array("AL","NY","CA","FL","WA");
-$st1 = array_rand($st);
-$state = $st[$st1];
-if ($state == "NY"){
-$zip = "10080";
-$city = "New+York";
-}
-elseif ($state == "WA"){
-$zip = "98001";
-$city = "Auburn";
-}
-elseif ($state == "AL"){
-$zip = "35005";
-$city = "Adamsville";
-}
-elseif ($state == "FL"){
-$zip = "32003";
-$city = "Orange+Park";
-}
-else{
-$zip = "90201";
-$city = "Bell";
-};
+$get = file_get_contents('https://randomuser.me/api/1.2/?nat=us');
+preg_match_all("(\"first\:\"(.*)\")siU", $get, $matches1);
+$name = $matches1[1][0];
+preg_match_all("(\"last\":\"(.*)\")siU", $get, $matches1);
+$last = $matches1[1][0];
+preg_match_all("(\"email\":\"(.*)\")siU", $get, $matches1);
+$email = $matches1[1][0];
+preg_match_all("(\"street\":\"(.*)\")siU", $get, $matches1);
+$street = $matches1[1][0];
+preg_match_all("(\"city\":\"(.*)\")siU", $get, $matches1);
+$city = $matches1[1][0];
+preg_match_all("(\"state\":\"(.*)\")siU", $get, $matches1);
+$state = $matches1[1][0];
+preg_match_all("(\"phone\":\"(.*)\")siU", $get, $matches1);
+$phone = $matches1[1][0];
+preg_match_all("(\"postcode\":(.*),\")siU", $get, $matches1);
+$postcode = $matches1[1][0];
 #=====================[1st REQ]
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
