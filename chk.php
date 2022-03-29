@@ -191,7 +191,7 @@ $result2 = curl_exec($ch);
 $info = curl_getinfo($ch);
 $time = $info['total_time'];
 
-///////////////////////// Bin Lookup Api //////////////////////////
+///////////////////////// Bin Lookup //////////////////////////
 
 // this is for additional info - so result will look more good by adding the info of the bin
 
@@ -258,43 +258,43 @@ else
 
 if
 (strpos($result2,  '"cvc_check": "pass"')) {
-  echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">{MSG:- CVC MATCHED}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+  echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">{MSG:- CVC MATCHED}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 } 
 
 elseif
 (strpos($result2,  "Thank You For Donation.")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 } 
 
 elseif
 (strpos($result2,  '"Success:"')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD</span></br>';
 } 
 
 elseif
 (strpos($result2,  "success")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 } 
 
 elseif
 (strpos($result2,  'Your card zip code is incorrect.')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Your Card Zip Code Is Incorrect.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Your Card Zip Code Is Incorrect.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 } 
 
 elseif
 (strpos($result2,  '/donations/thank_you?donation_number=','')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation. }</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Thank You For Donation. }</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 } 
 
 elseif
 (strpos($result2,  "incorrect_zip")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Incorrect Zip}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCV MATCHED {MSG:- Incorrect Zip}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 } 
 
 
 elseif
 (strpos($result2,  '"type":"one-time"')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">{MSG:- CCV MATCHED}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ APPROVED! ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">{MSG:- CCV MATCHED}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 } 
 
 # -------------------------------------------------- [CVV Responses END ] ------------------------------------------------------ #
@@ -305,22 +305,22 @@ elseif
 
 elseif
 (strpos($result2,  'security code is incorrect.')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Security Code Is Incorrect.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Security Code Is Incorrect.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  'security code is invalid.')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Security Code Is Invalid.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Security Code Is Invalid.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  "Your card's security code is incorrect.")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Your Card&#039;s Security Code Is Incorrect.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Your Card&#039;s Security Code Is Incorrect.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD</span></br>';
   }
 
 elseif
 (strpos($result2,  "incorrect_cvc")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Incorrect CVC.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">CCN LIVE {MSG:- Incorrect CVC.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD</span></br>';
 }
 
 #----------------------------------------------------- [CCN Responses END ]------------------------------------------------------ #
@@ -331,37 +331,37 @@ elseif
 
 elseif
 (strpos($result2,  "stolen_card")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Stolen Card.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Stolen Card.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  "lost_card")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Lost Card.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Lost Card.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  'Your card has insufficient funds.')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Your Card Has Insufficient Funds.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Your Card Has Insufficient Funds.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  "pickup_card")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Pickup Card.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Pickup Card.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  "insufficient_funds")) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Insufficient Funds.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Insufficient Funds.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  '"cvc_check": "fail"')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- CVC FAILED.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- CVC FAILED.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
 }
 
 elseif
 (strpos($result2,  'security code is invalid.')) {
-    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Security Code Is Invalid.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-success">ðŸ‘‘ Aprovada ðŸ‘‘</span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> |  <span class="badge badge-warning">LIVE {MSG:- Security Code Is Invalid.}</span> |   <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
 }
 
 # -------------------------------------------------- [Stolen,Lost,Pickup,Insufficient Funds Responses END ] --------------------- #
@@ -372,27 +372,27 @@ elseif
 
 elseif
 (strpos($result2,  'Your card has expired.')) {
-    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Expired Card</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Expired Card</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
   } 
 
 elseif
 (strpos($result2,  'Your card number is incorrect.')) {
-    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Your Card Number Is Incorrect.</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Your Card Number Is Incorrect.</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
   } 
 
 elseif
 (strpos($result2,  "incorrect_number")) {
-    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Your Card Number Is Incorrect.</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Your Card Number Is Incorrect.</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD </span></br>';
   } 
 
 elseif
 (strpos($result2,  'card was declined.')) {
-    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Card Was Declined</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Card Was Declined</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success">@ANONBD </span></br>';
   } 
 
 elseif
 (strpos($result2,  "generic_decline")) {
-    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Generic Decline</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> ðŸ‘‘ ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹ ðŸ‘‘ </span></br>';
+    echo '</br><span class="badge badge-danger">â˜ ï¸ Reprovada â˜ ï¸ </span> : <span class="badge badge-primary"> ' . $lista . ' </span> | <span class="badge badge-success">STRIPE-2REQ</span> | <span class="badge badge-warning">Reason: Generic Decline</span> |  <span class="badge badge-info">[ Card Type:- ' . $type . ' | Level:- ' . $brand . ' | Bank:- ' . $bank . ' ] </span>   <span class="badge badge-dark">[Country:- ' . $country . ' | Bin:- ' . $bin . ' | Time: '.$time.' s   ] </span>| <span class="badge badge-success"> @ANONBD‘ </span></br>';
   } 
 
 elseif
@@ -490,7 +490,7 @@ curl_close($ch);
 ob_flush();
 
 //echo "<b>1REQ Result:</b> $result1<br><br>";
-//echo "<b>2REQ Result:</b> $result2<br><br>";
+echo "<b>2REQ Result:</b> $result2<br><br>";
 
 #---------------------------------------------------------------------------------------------------------------------------------#
 #---------------------------------------------------[MADE BY ð‘«ð‘¹ð‘¨ð‘®ð‘¶ð‘µ#ð‘´ð‘¨ð‘ºð‘»ð‘¬ð‘¹]----------------------------------------------------#
