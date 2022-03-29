@@ -168,7 +168,7 @@ curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
 curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'authority: api.hostman.com',
-'method: POST',
+'method: PUT',
 'path: /billing/card',
 'scheme: https',
 'accept: */*',
