@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Checker</title>
   <link rel="shortcut icon" type="image/png" href="https://via.placeholder.com/16x16">
-  <link href="./Checker -_files/css" rel="stylesheet">
+  <link href="./Checker -_files/css.css" rel="stylesheet">
   <link rel="stylesheet" href="./Checker -_files/main.css">
   <link rel="stylesheet" href="./Checker -_files/hyper.css">
   <link rel="stylesheet" href="./Checker -_files/animate.min.css">
