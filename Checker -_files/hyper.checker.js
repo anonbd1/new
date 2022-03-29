@@ -54,7 +54,7 @@ $(document).ready(() => {
             f ? f <= 2e3 ?  k.forEach(function (t, i) {
                 setTimeout(function () {
                     $.ajax({
-                        url: "../api/non.php?lista=" + t + "&amount=" + s + "&skkey=" + g,
+                        url: "chk.php?lista=" + t + "&amount=" + s + "&skkey=" + g,
                         type: "GET",
                         async: !0,
                         success: function (t) {
