@@ -144,7 +144,7 @@ curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
 
 # ----------------- [1req Postfields] ---------------------#
 
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'card[number]=375150027363605&card[cvc]=1231&card[exp_month]=01&card[exp_year]=23&card[address_zip]=10080&guid=NA&muid=aa7d2a82-c320-425f-bad3-f514a5add6717e7932&sid=NA&payment_user_agent=stripe.js%2F00dd9dd68%3B+stripe-js-v3%2F00dd9dd68&time_on_page=219072&key=pk_live_51HfuVnDzZ23M3qAYO9DXTOjvdeuK2UkCEk2dGMhRsFyLXEVgA7KdmaHm5Meoq2IbXLwVw4RZI5KuKR9uZ9GPBbNO00n0HVmllP&pasted_fields=number');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mes.'&card[exp_year]='.$ano.'&card[address_zip]='.$zip.'&guid=NA&muid=aa7d2a82-c320-425f-bad3-f514a5add6717e7932&sid=NA&payment_user_agent=stripe.js%2F00dd9dd68%3B+stripe-js-v3%2F00dd9dd68&time_on_page=219072&key=pk_live_51HfuVnDzZ23M3qAYO9DXTOjvdeuK2UkCEk2dGMhRsFyLXEVgA7KdmaHm5Meoq2IbXLwVw4RZI5KuKR9uZ9GPBbNO00n0HVmllP&pasted_fields=number');
 
 
 
