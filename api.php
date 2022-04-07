@@ -66,7 +66,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_USERPWD, $sk. ':' . '');
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'amount=100&currency=usd&payment_method_types[]=card');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'amount=500&currency=usd&payment_method_types[]=card');
 $result2 = curl_exec($ch);
 $tok2 = Getstr($result2,'"id": "','"');
 //echo "<b>Result2: </b> $result2<br>";
