@@ -1,9 +1,3 @@
-<?php
-            	
-$data = $_POST['textdata'];
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $data);
-fclose($fp);
 <!DOCTYPE html>
 <html class="loading">
   <head>
